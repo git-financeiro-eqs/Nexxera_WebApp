@@ -1,6 +1,6 @@
 # 🏗️ Arquitetura do Projeto
 
-Este projeto é uma automação baseada em raspagem de tela por meio das bibliotecas **Selenium** e **PyautoGui** para extração e processamento de arquivos **CNAB** da plataforma **Nexxera SkylineWeb** e integração desses tais documentos no sistema ERP **Microsiga**.  
+Este projeto é uma automação baseada em raspagem de tela por meio das bibliotecas **Selenium** e **PyautoGui** para extração e processamento de arquivos **CNAB** da plataforma **Nexxera SkylineWeb** e integração desses tais documentos no sistema ERP **Microsiga WebApp**.  
 A automação possui uma arquitetura modular, separando as responsabilidades em três módulos principais para facilitar a manutenção e escalabilidade.  
 Seu estilo de codificação segue um modelo **procedural modular**.
 
