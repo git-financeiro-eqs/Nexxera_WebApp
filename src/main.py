@@ -224,15 +224,19 @@ def automacao(periodo):
  
                 sleep(0.5)
                 pyautogui.press("enter", interval=0.2)
- 
+                
+                aux = 0
                 while True:
                     clicar = utils.encontrar_imagem(r'Imagens\BotaoPerguntas.png')
+                    aux += 1
                     if type(clicar) == tuple:
                         x, y = clicar
                         pyautogui.click(x, y)
                         abriu = utils.encontrar_imagem(r'Imagens\ReferenciaAbriuPerguntas.png')
                         if type(abriu) == tuple:
                             break
+                    if aux == 6:
+                        pyautogui.press("enter", interval=0.2)
  
  
                 sleep(1)
