@@ -8,6 +8,7 @@ import numpy as np
 from time import sleep
 from pathlib import Path
 from datetime import datetime
+import pygetwindow as gw
 from pyperclip import paste
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -97,7 +98,15 @@ def automacao(periodo):
     pyautogui.hotkey("ctrl", "j", interval=2)
  
     pyautogui.press(["tab"]*4)
-    pyautogui.press("enter", interval=3)
+    pyautogui.press("enter", interval=0.5)
+
+    while True:
+        janela = gw.getWindowsWithTitle("Explorador de Arquivos")
+        if janela:
+            sleep(1)
+            break
+        sleep(0.2)
+
     pyautogui.press("f2", interval=0.5)
     pyautogui.hotkey('ctrl', 'c', interval=0.5)
        
