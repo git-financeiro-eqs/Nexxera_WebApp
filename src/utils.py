@@ -128,7 +128,6 @@ def reabrir_rotina_siga():
         if type(clicar) == tuple:
             x, y = clicar
             pyautogui.click(x, y)
-            aux = 0
             clicar2 = encontrar_imagem(r'Imagens\BotaoConfirmar.png')
             while type(clicar2) == tuple:
                 x, y = clicar2
